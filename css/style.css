@@ -359,8 +359,6 @@ color: var(--txt-grey);
 
 /*================OUR CLIENTS================*/
 
-.our-clients-section{
-}
 .our-clients-title{
 font-weight: bold;
 font-size: 36px;
@@ -378,7 +376,7 @@ padding-bottom: 50px;
 .our-clients-item:not(:last-child){
     margin-right: 30px;
 }
-.our-clients-item{
+.our-clients-link{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -387,16 +385,18 @@ padding-bottom: 50px;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
     align-items: center;
+    color: #AFB1B8;
 }
-.our-clients-link{ 
-    fill: #AFB1B8;
-}
+
 .our-clients-item :hover,
 .our-clients-item :focus{
     fill: var(--fha-blue);
     border: 1px solid var(--fha-blue);
 }
 
+.clients-svg{
+    fill: currentColor;
+}
 /*================END OUR CLIENTS================*/
 
 /*================ FOOTER================*/
