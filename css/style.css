@@ -5,7 +5,8 @@
     --txt-dark: #212121;
     --txt-grey: #757575;
     --fha-blue: #2196F3;
-    --txt-white:#FFFFFF;
+    --txt-white: #FFFFFF;
+    --icon: #AFB1B8;
     /*fonts*/
     --main-font: Roboto, sans-serif;
     --secondary-font: Raleway, sans-serif;
@@ -76,6 +77,8 @@ img{
 
 .mail-link,
 .tel-link{
+    display: flex;
+    align-items: center;
     font-style: normal;
     color: var(--txt-grey);
 }
@@ -188,6 +191,24 @@ margin-right: 50px;
 
 .contacts-tel{
 color: var(--txt-grey);
+}
+
+.tel-link:hover .contacts-svg,
+.tel-link:focus .contacts-svg{
+fill: currentColor
+}
+
+.mail-link:hover .contacts-svg,
+.mail-link:focus .contacts-svg{
+fill: currentColor
+}
+
+.tel-link .contacts-svg{
+    
+    margin-right: 10px;
+}
+.mail-link .contacts-svg{
+    margin-right: 10px;
 }
 
 /*================END HEADER================*/
@@ -325,7 +346,7 @@ display: flex;
 
 .staff-list-content-wrapper{
 padding-top: 30px;
-padding-bottom: 30px;
+padding-bottom: 16px;
 }
 
 .staff-name{
@@ -355,6 +376,41 @@ text-align: center;
 letter-spacing: 0.03em;
 color: var(--txt-grey);
 }
+
+.section-staff-icons{
+    padding-bottom: 30px;
+}
+
+.icon-item:not(:last-child){
+    margin-right: 10px;
+}
+
+
+.icon-list{
+display: flex;
+justify-content: center;
+    
+}
+.icon-link{
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 25px;
+background: #FFFFFF;
+color: #AFB1B8;
+height: 44px;
+width: 44px;
+}
+
+.icon-link:hover,
+.icon-link:focus{
+color: #FFFFFF;
+background: var(--fha-blue);
+}
+
+.staff-ikon-svg{
+fill: currentColor;
+}
 /*================ END OUR STAFF================*/
 
 /*================OUR CLIENTS================*/
@@ -376,22 +432,22 @@ padding-bottom: 50px;
 .our-clients-item:not(:last-child){
     margin-right: 30px;
 }
+
 .our-clients-link{
     display: flex;
     justify-content: center;
-    align-items: center;
     height: 90px;
     width: 170px;
-    border: 1px solid #AFB1B8;
+    border: 1px solid var(--icon);
     border-radius: 4px;
     align-items: center;
-    color: #AFB1B8;
+    color: var(--icon);
 }
 
-.our-clients-item :hover,
-.our-clients-item :focus{
-    fill: var(--fha-blue);
-    border: 1px solid var(--fha-blue);
+.our-clients-link:hover,
+.our-clients-link:focus{
+    color: var(--fha-blue);
+    border-color: var(--fha-blue);
 }
 
 .clients-svg{
@@ -405,8 +461,9 @@ padding-bottom: 50px;
 background: var(--b-dark);
 }
 
-.footer-content{
+.footer-content-left{
 padding-top: 60px;
+padding-right: 70px;
 }
 
 .footer-section .logo-link{
@@ -463,6 +520,53 @@ font-size: 14px;
 line-height: 1.714;
 letter-spacing: 0.03em;
 color: rgba(255, 255, 255, 0.6);
+}
+.footer-center-description{
+font-weight: 700;
+font-size: 14px;
+line-height: 1.142;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: #FFFFFF; 
+padding-bottom: 20px;
+}
+
+.footer-icon-item:not(:last-child){
+    margin-right: 10px;
+}
+
+.footer-icon-list{
+    display: flex;
+    justify-content: center;
+}
+
+.footer-icon-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #FFFFFF;
+    height: 44px;
+    width: 44px; 
+}
+
+.footer-icon-link:hover,
+.footer-icon-link:focus{
+color: #FFFFFF;
+background: var(--fha-blue);
+}
+
+.footer-ikon-svg{
+ fill: currentColor;
+}
+
+.footer-content-center{
+    padding-top: 72px;
+    padding-bottom: 100px;
+}
+.section-footer-icons{
+   
 }
 /*================END FOOTER================*/
 
@@ -532,6 +636,11 @@ margin-top: 50px;
 .projects-list-item{
 margin-right: 30px;
 margin-bottom: 30px;
+}
+
+.projects-list-item:hover,
+.projects-list-item:focus{
+box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .projects-list-item:nth-child(3n) {
