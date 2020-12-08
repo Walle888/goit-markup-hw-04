@@ -574,13 +574,6 @@ background: var(--fha-blue);
     border-bottom: 1px solid #ECECEC;
 }
 
-.header-portfolio{
-padding-bottom: 25px;
-left: 0px;
-top: 0px;
-background: var(--txt-white);
-}
-
 .portfolio-btn{
 font-family: var(--main-font);
 font-weight: 500;
